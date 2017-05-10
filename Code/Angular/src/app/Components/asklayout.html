@@ -1,0 +1,43 @@
+<navbar [user]="user"></navbar>
+<div id="container">
+    <br><br><br><br><br><br>
+
+    <div style="display: inline-block">
+        <span id="titleText">Title</span>
+    </div>
+
+    <div id="title">
+        <input name="subject" [(ngModel)]="subject" id="titleinput" type="text" placeholder="Ask Any Question That Comes To Mind">
+    </div>
+
+    <br><br>
+    <div>
+        <textarea id="description" name="description" [(ngModel)]="description">
+        </textarea>
+    </div>
+
+    <div>
+
+        <div id="tags">
+        </div>
+
+
+
+    </div>
+
+
+    <div id="master_div">
+        <div id="categories">
+            <ul id="tagslist" *ngFor="let tag of tags ">
+                <span (click)="removeTag(tag)" class="tag">{{tag.name}}</span>
+            </ul>
+        </div>
+        <div id="inputbox">
+            <input placeholder="Enter a maximum of 5 tags" id="input" name="currentTag" [(ngModel)]="currentTag" (keyup.space)="addTag()" type="text">
+        </div>
+    </div>
+    <br><br>
+    <div>
+        <button id="postquestion" (click)="create()">Post Your Question</button>
+    </div>
+</div>

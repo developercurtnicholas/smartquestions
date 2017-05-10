@@ -1,0 +1,19 @@
+<div id="navigationbar">
+
+    <div id="title"><h2 class="title" style="color:#b3d237;">Smart</h2><h2 class="title" style="color: #2cace2">Questions</h2></div>
+
+
+    <div id="navSearch">
+        <input name="query" [(ngModel)]="query" type="text" (keyup.enter)="search()" id="searchField" placeholder="Search for question">
+    </div>
+
+    <div id="navlinks">
+        <ul id="links">
+
+                <li><a routerLink="/home" routerLinkActive="active">Questions</a></li>
+                <li><a routerLink="/profile" routerLinkActive="active">{{user.firstname}}</a></li>
+                <li><a href="">LogOut</a></li>
+
+        </ul>
+    </div>
+</div>

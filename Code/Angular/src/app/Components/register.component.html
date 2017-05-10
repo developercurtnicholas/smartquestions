@@ -1,0 +1,20 @@
+<div id="page">
+    <div id="title"><h2 class="title" style="color:#b3d237;">Smart</h2><h2 class="title" style="color: #2cace2">Questions</h2></div>
+    <div id="loginContainer">
+
+        <div id="loginHeading">
+            <h2 style="color: white;text-align: center"><b>Register</b></h2>
+        </div><br><br>
+        <div id="fields">
+            <div>
+                <input  name="firstname" [(ngModel)]="firstname" class="input" type="text" placeholder="First Name">
+                <input [(ngModel)]="lastname" name="lastname" class="input" type="text" placeholder="Last Name">
+                <input [(ngModel)]="username" name="username" class="input" type="text" placeholder="Username">
+                <input [(ngModel)]="email" name="email" class="input" type="email" placeholder="Email">
+                <input [(ngModel)]="password" name="password" class="input" type="password" placeholder="Password">
+                <input [(ngModel)]="confirm" name="confirm" class="input" type="password" placeholder="Confirm Password">
+                <input id="submit" type="submit" (click)="register()">
+            </div>
+        </div>
+    </div>
+</div>

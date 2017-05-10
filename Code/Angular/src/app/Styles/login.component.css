@@ -1,0 +1,92 @@
+#loginContainer{
+    box-shadow:   0px 0px 5px #b3d237;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin: auto auto;
+    text-align: center;
+    border-radius: 3px;
+    width: 40%;
+    padding-bottom: 30px;
+    background-color: white;
+}
+
+html{
+    background: url('../Resources/background.png');
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.title{
+    text-align: center;
+    margin: auto;
+    display: inline;
+}
+
+#title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#email{
+    background-image: url("../../app/Resources/email.png");
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: contain;
+    padding-left: 40px;
+}
+#password{
+    background-image: url("../../app/Resources/lock.png");
+    background-repeat: no-repeat;
+    background-position-x: 0px;
+    background-position-y: 0px;
+    background-size: contain;
+    padding-left: 40px;
+}
+
+#loginHeading{
+    background-color: #b3d237;
+    box-shadow:   0px 1px 5px #888888;
+    width: 100%;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+#submit{
+    color: white;
+    background-color: #0095ff;
+    padding: 10px;
+    border-width : 2px;
+    border-color: #66bfff ;
+    border-radius: 3px;
+    width: 100%;
+}
+p,a{
+    color: white;
+}
+a{
+    float: right;
+    color: #b3d237;
+    text-decoration: none;
+}
+.label{
+    float: right;
+}
+
+#fields{
+    display: inline-block;
+    width: 80%;
+
+}
+
+.input{
+    width: 80%;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: lightblue;
+    border-width: 2px;
+    padding: 5px;
+    margin-bottom: 10px;
+}

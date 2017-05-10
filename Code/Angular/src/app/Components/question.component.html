@@ -1,0 +1,70 @@
+<navbar [user]="user"></navbar><br><br>
+<div id="questionContainer" style="height: 500px">
+
+    <div style="position: relative">
+
+        <div class="voteDetails" style="  background-color: #e9e8fa;">
+            <button  class="up"(click)="upVoteQuestion()"></button>
+            <br><br><span class="votes"><b>{{votes}}</b></span><br>
+            <button class="down" (click)="downVoteQuestion()"></button>
+        </div>
+
+
+        <div class="questionDeatils" style="margin-left: 30px;left: 3%;top: 0px">
+            <h2 id="subject">{{subject}}</h2><hr>
+            <p id="description">{{description}}</p>
+        </div>
+    </div>
+
+
+    <div class="questionDeatils">
+        <p id="asker"><b>{{asker}}</b></p>
+    </div>
+
+
+    <ul *ngFor="let answer of answers">
+
+
+        <div class="answersection">
+            <li>
+
+                <div id="details">
+
+                    <div>
+
+                        <div class="voteDetails">
+                            <button  class="up"(click)="upVote(answer)"></button>
+                            <br><br><span class="votes"><b>{{answer.upvotes}}</b></span><br>
+                            <button class="down" (click)="downVote(answer)"></button>
+                        </div>
+
+
+                        <div id="answerdetails">
+                            {{answer.answer}}
+                        </div>
+
+                        <br><br>
+
+                    </div>
+
+                    <br><br><span id="answeredby">Answered By <b>{{answer.user}}</b></span><br><br>
+                    <hr>
+                </div>
+
+            </li>
+        </div>
+
+
+    </ul>
+
+    <div id="submission" style="display:block;position: relative;">
+        <h3>Submit An Answer</h3>
+        <form (submit)="addAnswer(submission)">
+            <textarea class="input" type="text" name="submission" [(ngModel)]="submission">
+
+            </textarea><br>
+            <input class="button" type="submit" text="Submit"/>
+        </form>
+    </div>
+
+</div>

@@ -1,0 +1,90 @@
+#titleinput{
+    padding: 10px;
+    border-color: transparent;
+    width: 30%;
+    box-shadow: 0px 0px 1px 1px lightgrey inset;
+    display: inline-block;
+}
+
+#titleText{
+    font-size: 1em;
+    display: inline-block;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+#description{
+    min-width: 500px;
+    min-height: 300px;
+}
+
+#container{
+    margin-left: 15%;
+}
+
+.tag{
+    background-color: #e1ecf4;
+    padding: 4px;
+    font-size: .7em;
+    color: #3985c0;
+}
+.tag:hover{
+    cursor: pointer;
+}
+
+#postquestion{
+    background-color: #0095ff;
+    border-width: 2px;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    padding: 8px;
+    border-color: #66bfff;
+}
+
+#tagslist{
+    display: inline;
+    margin: 0px;
+
+    border-width: thin;
+    padding: 10px;
+    width: 50%;
+    height: 50px;
+}
+
+#master_div{
+    padding: 5px;
+    width: 50%;
+    box-shadow: 0px 0px 1px 1px lightgrey inset;
+}
+
+#categories{
+    display: inline-block;
+}
+#inputbox{
+    display: inline-block;
+}
+
+#input{
+    border-color: transparent;
+    outline: none;
+}
+
+#tagcontainer{
+    display: inline;
+    margin: 0px;
+}
+
+input:focus{
+    outline: none;
+}
+
+#taglistcontainer{
+
+}
+
+#title{
+    display: inline-block;
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+<div id="page">
+
+    <div id="title"><h2 class="title" style="color:#b3d237;">Smart</h2><h2 class="title" style="color: #2cace2">Questions</h2></div>
+    <div id="loginContainer">
+
+        <div id="loginHeading">
+            <h2 style="color: white;text-align: center"><b>Login</b></h2>
+        </div><br><br>
+        <div id="fields">
+            <input class="input" name="email" [(ngModel)]="email" id="email" type="email" ><br><br>
+            <input class="input" name="password" [(ngModel)]="password" id="password" type="password"><br><br>
+            <input id="submit" type="submit" (click)="login({email : this.email, password: this.password})"><br><br><br>
+            <b><a routerLink="/register" routerLinkActive="active">Register</a></b>
+        </div>
+
+    </div>
+
+</div>

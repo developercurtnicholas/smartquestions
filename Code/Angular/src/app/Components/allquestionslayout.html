@@ -1,0 +1,67 @@
+<div style="position: relative;">
+    <div id="allquestions">
+        <h4 style="font-size: 1em">All Questions</h4>
+        <hr>
+
+        <div id="page">
+            <ul *ngFor="let question of questions ">
+
+
+                <div style="background-color: #fffbec" id="questionContainer">
+
+                    <div id="extras">
+
+                        <div id="votes">
+                            <span class="data" id="votenum">{{question.votes}}</span><br>
+                            <span class="data" style="font-size: .7em;color: #888888">Votes</span>
+                        </div>
+
+                        <div id="answers" style="background-color: #5fba7d;padding: 3px">
+                            <span class="data" id="answernum">{{question.answercount}}</span><br>
+                            <span class="data" style="font-size: .7em;color: white">Answers</span>
+                        </div>
+
+                        <div id="views">
+                            <span id="viewsText">{{question.views}}</span><br>
+                            <span style="text-align: center;color: #888888;font-size: .7em">Views</span>
+                        </div>
+
+                    </div>
+
+
+                    <div id="questionSnippet">
+                        <h5 id="questionSubject" (click)="loadQuestion(question)">{{question.subject}}</h5>
+                        <p style="     width: 700px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;">{{question.description}}</p>
+
+                        <div class="tag">{{question.tags}}</div>
+
+
+
+                        <div id="useranddate">
+                            <span>{{question.username}}</span><br>
+                            <span>{{question.time}}</span>
+                        </div>
+
+                    </div>
+
+                </div><br><br>
+                <hr>
+            </ul>
+
+        </div>
+    </div>
+
+    <div id="sidesection">
+        <div style="display: inline-block">
+            <span id="amount" style="font-size: 2em">{{questions.length}}</span><br>
+            <span style="font-size: .8em">Questions</span>
+        </div>
+        <div style="display: inline-block;float: right">
+            <button id="askquestion" (click)="ask() ">Ask Question</button>
+        </div>
+    </div>
+</div>
+
